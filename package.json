@@ -43,7 +43,7 @@
         "supertest": "0.15.0"
     },
     "engines": {
-        "node": "8.9.4"
+        "node": "6.11.1"
     },
     "bin": {
         "slackin": "./bin/slackin"
@@ -59,7 +59,7 @@
         "test": "mocha && eslint lib/**",
         "postinstall": "gulp",
         "build": "gulp",
-        "start": "node ./bin/slackin"
+        "start": "chmod +x bin/slackin && ./bin/slackin"
     },
     "now": {
         "type": "npm",
